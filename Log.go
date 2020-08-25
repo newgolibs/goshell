@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
-func Log(args ...interface{}) {
+func Log(args ...interface{}) interface{} {
 	fmt.Printf("%+v\n", args)
+	return nil
 }
